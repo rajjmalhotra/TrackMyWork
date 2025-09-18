@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <title>TrackMyWork</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; padding: 12px; width: 380px; transition: background 0.3s, color 0.3s; }
+    button { padding: 6px 12px; margin: 6px 0; display: block; width: 100%; border: none; border-radius: 6px; cursor: pointer; }
+    #riskMeter { text-align: center; margin: 12px 0; }
+    #verdict { font-size: 16px; margin: 8px 0; font-weight: bold; }
+    #evidence div { margin: 6px 0; padding: 6px; border-bottom: 1px solid #ddd; border-radius: 4px; }
+    #evidence button { margin-left: 8px; padding: 4px 8px; font-size: 12px; }
+    .theme-toggle { background: #444; color: #fff; margin-top: 12px; }
+    .dark { background: #121212; color: #f1f1f1; }
+    .dark button { background: #333; color: #fff; }
+    .light { background: #fff; color: #000; }
+    .light button { background: #eee; color: #000; }
+  </style>
+</head>
+<body class="light">
+  <h3>TrackMyWork</h3>
+  <button id="scanBtn">Scan This Page</button>
+  <div id="riskMeter"></div>
+  <div id="verdict"></div>
+  <div id="advice"></div>
+  <div id="evidence"></div>
+  <button id="exportBtn">Export Report</button>
+  <button id="themeBtn" class="theme-toggle">Toggle Dark Mode</button>
+  <script src="popup.js"></script>
+</body>
+</html>
